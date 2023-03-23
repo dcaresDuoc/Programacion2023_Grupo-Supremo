@@ -1,0 +1,2 @@
+el projecto sera un juego de carta basado con un crud en donde el jugador podra cambiar las cartas con otros jugadores atraves de codigo qr
+dando asi mas interacion en el
