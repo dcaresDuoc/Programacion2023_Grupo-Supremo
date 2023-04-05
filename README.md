@@ -1,4 +1,4 @@
-# CLON INSTAGRAM
+# Tienda Ecommerce
 
 ## Tabla de Contenidos
 
@@ -17,7 +17,7 @@
 
 ## Proyecto
 
-Este proyecto es un clon de Instagram, fue realizado por un grupo de estudiantes de Desarrollo Web, con la finalidad de aplicar los conocimientos adquiridos en el curso. Para la implementación, se utilizó el framework Django para el backend y React para el frontend.
+Este proyecto es un requerimiento de un pyme para su Ecommerce, fue realizado por un grupo de estudiantes de Desarrollo Web, con la finalidad de aplicar los conocimientos adquiridos en el curso. Para la implementación, se utilizó el framework Django para el backend y React para el frontend.
 
 ### Links
 
