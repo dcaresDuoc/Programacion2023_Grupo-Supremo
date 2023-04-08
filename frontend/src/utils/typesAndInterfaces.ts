@@ -1,4 +1,4 @@
-export type SvgType = "arrowLeft" | "docker"
+export type SvgType = "arrowLeft" | "docker" | "homeLoading" | "desing1"
 
 export type SvgFill = "#5F6368" | "#71757A" | "#000"
 
