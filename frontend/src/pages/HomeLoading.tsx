@@ -9,7 +9,7 @@ const HomeLoading = () => {
     <div className='flex justify-center mb-1  text-xl font-bold'>232-112 Nulla ST, Markoto</div>
     <div className='flex justify-center mb-1 text-xl font-bold'>Mississippi 96522</div>
     <div className='flex justify-center mb-1'>{getSvg({
-        type: "desing1"
+        type: "homeLoading"
     })}</div>
     
     </>
