@@ -31,6 +31,7 @@ export var Header = ({
 		setCountProducts(0);
 	};
 	//----para llamar sesion y tranfomrar string
+	/*
 	useEffect(() => {
 		
 		let letras = localStorage.getItem('carrito') + '';console.log(letras)
@@ -40,6 +41,7 @@ export var Header = ({
 			Header = cartFromStorage;
 		}
 	  }, []);
+	  */
 	  
 	  
 	return (
