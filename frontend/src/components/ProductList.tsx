@@ -7,10 +7,10 @@ export const ProductList = ({
 	setCountProducts,
 	total,
 	setTotal,
-}) => {
-	const onAddProduct = product => {
-		if (allProducts.find(item => item.id === product.id)) {
-			const products = allProducts.map(item =>
+}:any)=> {
+	const onAddProduct = (product : any )=> {
+		if (allProducts.find((item : any ) => item.id === product.id)) {
+			const products = allProducts.map((item : any ) =>
 				item.id === product.id
 					? { ...item, quantity: item.quantity + 1 }
 					: item
