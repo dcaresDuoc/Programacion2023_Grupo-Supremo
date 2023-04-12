@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import  { useState, useEffect } from 'react';
 
-export const Header = ({
+// Access value associated with the key
+
+
+export var Header = ({
 	
 	allProducts,
 	setAllProducts,
@@ -9,6 +12,7 @@ export const Header = ({
 	setCountProducts,
 	setTotal,
 }:any) => {
+			
 	const [active, setActive] = useState(false);
 
 	const onDeleteProduct = (product : any ) => {
@@ -26,8 +30,20 @@ export const Header = ({
 		setTotal(0);
 		setCountProducts(0);
 	};
-
+	//----para llamar sesion y tranfomrar string
+	useEffect(() => {
+		
+		let letras = localStorage.getItem('carrito') + '';console.log(letras)
+		const cartFromStorage = JSON.parse(letras);
+		if (cartFromStorage[0]) {
+			console.log(cartFromStorage)
+			Header = cartFromStorage;
+		}
+	  }, []);
+	  
+	  
 	return (
+		
 		<header>
 			<h1>Tienda</h1>
 

@@ -23,6 +23,9 @@ export const ProductList = ({
 		setTotal(total + product.price * product.quantity);
 		setCountProducts(countProducts + product.quantity);
 		setAllProducts([...allProducts, product]);
+		//-- guardar el formato local del carrito
+		console.log('guardando')
+		localStorage.setItem('carrito', JSON.stringify([ProductList]));console.log(JSON.stringify([ProductList]))
 	};
 
 	return (
