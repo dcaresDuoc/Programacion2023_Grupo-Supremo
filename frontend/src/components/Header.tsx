@@ -8,12 +8,12 @@ export const Header = ({
 	countProducts,
 	setCountProducts,
 	setTotal,
-}) => {
+}:any) => {
 	const [active, setActive] = useState(false);
 
-	const onDeleteProduct = product => {
+	const onDeleteProduct = (product : any ) => {
 		const results = allProducts.filter(
-			item => item.id !== product.id
+			(item : any ) => item.id !== product.id
 		);
 
 		setTotal(total - product.price * product.quantity);
@@ -63,7 +63,7 @@ export const Header = ({
 					{allProducts.length ? (
 						<>
 							<div className='row-product'>
-								{allProducts.map(product => (
+								{allProducts.map((product : any ) => (
 									<div className='cart-product' key={product.id}>
 										<div className='info-cart-product'>
 											<span className='cantidad-producto-carrito'>
