@@ -8,3 +8,18 @@ export interface SvgItem {
   width?: string
   height?: string
 }
+
+export interface Product {
+  id: string
+  name: string
+  price: number
+  description: string
+  imgSrc: string
+}
+
+export interface ProductImage {
+  id: string
+  originalName: string
+  fileName: string
+  productId: string
+}
