@@ -1,0 +1,8 @@
+sqladdr: freetierdb.cyic6e0iotcr.sa-east-1.rds.amazonaws.com:3306
+sqldbname: test_db
+sqlnet: tcp
+sqlpasswd: leandro123
+sqluser: leandromarcelo
+version: "1.0"
+port: 3000
+htmldir: react-build/
