@@ -1,1 +1,6 @@
 node_modules
+.env.dev
+Makefile
+coverage
+dist
+cloud-storage-credentials.json
