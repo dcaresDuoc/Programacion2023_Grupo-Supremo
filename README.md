@@ -1,3 +1,5 @@
+# por Exequiel ALvarado
+
 # Tienda Ecommerce
 
 ## Tabla de Contenidos
@@ -28,6 +30,12 @@ Este proyecto es un requerimiento de un pyme para su Ecommerce, fue realizado po
 
 ### Construido con:
 
+| HTML                                      | | CSS                                   | 
+| ----------------------------------------- | | ----------------------------------------- |
+| <img src="./icons/Html.svg" width="48">   | | <img src="./icons/CSS.svg" width="48"> |
+
+
+
 #### Programming Languages
 
 | Python                                         | JavaScript                                    | TypeScript                                    |
@@ -36,14 +44,11 @@ Este proyecto es un requerimiento de un pyme para su Ecommerce, fue realizado po
 
 #### Frameworks & Libraries
 
-| Django                                    | React                                         |
-| ----------------------------------------- | --------------------------------------------- |
-| <img src="./icons/Django.svg" width="48"> | <img src="./icons/React-Dark.svg" width="48"> |
+| Django                                    | 
+| ----------------------------------------- |
+| <img src="./icons/Django.svg" width="48"> |
 
-#### Recursos Utilizados
 
-- [Tailwind](https://tailwindcss.com/docs/)
-- [AWS](https://docs.aws.amazon.com/)
 
 ## Autores
 
