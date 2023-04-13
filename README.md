@@ -50,6 +50,8 @@ Este proyecto es un requerimiento de un pyme para su Ecommerce, fue realizado po
 
 ## Autores
 
+- GitHub - [@Exequiel-Alvarado](https://github.com/Exequiel-Alvarado/)
+
 - GitHub - [@Leandro-Marcelo](https://github.com/Leandro-Marcelo/)
 
-- GitHub - [@Exequiel-Alvarado](https://github.com/Exequiel-Alvarado/)
+
