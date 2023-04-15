@@ -1,0 +1,51 @@
+/* Solo si un estilo, transición o animación te esta costando mucho adaptarlo a Tailwind, podemos usar CSS puro */
+
+
+.none {
+  display: none;
+}
+
+.loader {
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .loader {
+    grid-column: 3 / 2;
+  }
+}
+
+/* OVERLAY */
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 16, 16, 0.5);
+}
+
+.overlay.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.overlay>div {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 40rem;
+}
+
+.overlay>div>* {
+  margin: 2rem;
+}
