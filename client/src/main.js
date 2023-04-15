@@ -1,7 +1,10 @@
 // * PAGES
 import LoginPage from "./pages/Login.js"
 import Error404Page from "./pages/Error404.js"
-// import Error404Screen from "./screens/Error404Screen.js"
+import SignUpPage from "./pages/SignUp.js"
+import ForgotPasswordPage from "./pages/ForgotPassword.js"
+
+import HomePage from "./pages/Home.js"
 
 // * COMPONENTS
 
@@ -10,7 +13,14 @@ import parseRequestUrl from "./utils/parseRequestUrl.js"
 import { showLoading, hideLoading } from "./utils/loader.js"
 
 const routes = {
+  // * AUTH ROUTES
   "/": LoginPage,
+  "/login": LoginPage,
+  "/sign-up": SignUpPage,
+  "/forgot-password": ForgotPasswordPage,
+
+  // * AUTHENTICATED ROUTES
+  "/home": HomePage,
 }
 
 const router = async () => {
@@ -22,10 +32,14 @@ const router = async () => {
     (request.id ? "/:id" : "") +
     (request.verb ? `/${request.verb}` : "")
 
+  console.log("parseUrl")
+  console.log(parseUrl)
+
   const page = routes[parseUrl] ? routes[parseUrl] : Error404Page
 
   const app = document.getElementById("app")
   app.innerHTML = await page.render()
+  await page.after_render()
 
   /* hideLoading() */
 }
