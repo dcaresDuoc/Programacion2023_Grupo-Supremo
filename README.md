@@ -1,6 +1,4 @@
-# por Exequiel ALvarado
-
-# Tienda Ecommerce
+# Tienda Ecommerce VR
 
 ## Tabla de Contenidos
 
@@ -30,28 +28,24 @@ Este proyecto es un requerimiento de un pyme para su Ecommerce, fue realizado po
 
 ### Construido con:
 
-| HTML                                      | CSS                                       | 
-| ----------------------------------------- | ----------------------------------------- |
-| <img src="./icons/HTML.svg" width="48">   | <img src="./icons/CSS.svg" width="48">    |
-
-
+| HTML                                    | CSS                                    |
+| --------------------------------------- | -------------------------------------- |
+| <img src="./icons/HTML.svg" width="48"> | <img src="./icons/CSS.svg" width="48"> |
 
 #### Programming Languages
-| Python                                         | JavaScript                                    | TypeScript                                    |
-| ---------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
-| <img src="./icons/Python-Dark.svg" width="48"> | <img src="./icons/JavaScript.svg" width="48"> | <img src="./icons/TypeScript.svg" width="48"> |
+
+| Python                                         | JavaScript                                    |
+| ---------------------------------------------- | --------------------------------------------- |
+| <img src="./icons/Python-Dark.svg" width="48"> | <img src="./icons/JavaScript.svg" width="48"> |
 
 #### Frameworks & Libraries
 
-| Django                                    | 
-| ----------------------------------------- | 
-| <img src="./icons/Django.svg" width="48"> | 
-
+| Django                                    |
+| ----------------------------------------- |
+| <img src="./icons/Django.svg" width="48"> |
 
 ## Autores
 
 - GitHub - [@Exequiel-Alvarado](https://github.com/Exequiel-Alvarado/)
 
 - GitHub - [@Leandro-Marcelo](https://github.com/Leandro-Marcelo/)
-
-
