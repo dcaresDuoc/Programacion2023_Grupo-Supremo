@@ -1,7 +1,7 @@
 import { getSvg } from "../utils/getSvg.js"
 import characterVR2d from "../assets/characterVR2d.png"
 
-const HomeScreen = {
+const Login = {
   after_render: () => {},
   render: async () => {
     return `
@@ -53,4 +53,4 @@ const HomeScreen = {
     `
   },
 }
-export default HomeScreen
+export default Login

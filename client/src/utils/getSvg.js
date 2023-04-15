@@ -14,8 +14,8 @@ export const getSvg = (item) => {
   switch (item.type) {
     case "arrowLeft":
       return `<svg
-          width={item.width ? item.width : "24px"}
-          height={item.height ? item.height : "24px"}
+          width=${item.width ? item.width : "24px"}
+          height=${item.height ? item.height : "24px"}
           viewBox="0 0 83 83"
           fill={item.fill ? item.fill : "currentColor"}
           xmlns="http://www.w3.org/2000/svg"
