@@ -10,8 +10,8 @@ const Login = {
         <div class="bg-pink-100 w-14 h-14 flex justify-center items-center rounded-full">
           ${getSvg({
             type: "arrowLeft",
-            width: "20px",
-            height: "20px",
+            width: "40px",
+            height: "40px",
           })}
         </div>
       </div>

@@ -1,5 +1,7 @@
 /* Solo si un estilo, transición o animación te esta costando mucho adaptarlo a Tailwind, podemos usar CSS puro */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .none {
   display: none;
