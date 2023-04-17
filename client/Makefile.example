@@ -1,0 +1,3 @@
+start-dev:
+	@echo "Starting dev server"
+	npx vite
