@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:tsnode": "npx ts-node-dev --respawn --ignore-watch node_modules ./src/index.ts",
+    "start-console": "npx nodemon --files ./src/infrastructure/driving-adapters/console/console.ts",
+    "start:development": "npx nodemon --files ./src/infrastructure/driving-adapters/rest-api/start.ts",
+    "migrate-mysql:development": "dotenv -e .env.development -- npx prisma migrate dev --name initial-mysql",
+    "start:production": "npx nodemon --files ./src/infrastructure/driving-adapters/start.ts",
+    "build": "npx tsc",
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",

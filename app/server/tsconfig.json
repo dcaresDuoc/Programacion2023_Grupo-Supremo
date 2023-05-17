@@ -1,0 +1,29 @@
+{
+  // added
+  "exclude": ["./coverage", "./dist", "__tests__", "jest.config.js", "prisma", "prismaModelado"],
+  // added
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  },
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    // added
+    "rootDir": "./src",
+        // added
+    "moduleResolution": "node",
+    // added
+    "checkJs": true,
+    /* Cómo vamos a estar almacenando todos los usuarios en memoría, vamos a estar importando json */
+    "resolveJsonModule": true,
+        // added
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+        // added
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  }
+}

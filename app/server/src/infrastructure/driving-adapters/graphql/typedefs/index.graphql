@@ -1,0 +1,9 @@
+# user para obtener un array de usuarios
+type Query {
+  user: [User]
+}
+
+# Desde el cliente/frontend te van a pasar un user que es de tipo UserCreateInput y yo voy a retornar un usuario. Ese ! en UserCreateInput significa que siempre me deben mandar un usuario con ese tipado y ese ! en User significa que el servidor siempre va a devolver un usuario
+type Mutation {
+  createUser(user: UserCreateInput!): User!
+}

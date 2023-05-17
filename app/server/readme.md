@@ -1,0 +1,1 @@
+pasar el nombre de las tablas de mayusculas a minusculas

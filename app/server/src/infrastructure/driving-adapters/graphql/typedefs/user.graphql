@@ -1,0 +1,21 @@
+  # el ! significa que es obligatorio
+type User { 
+  id: ID!
+  name: String!
+  email: String!
+  password: String!
+}
+
+# Inputs
+input UserCreateInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+input UserUpdateInput {
+  id: ID!
+  name: String
+  email: String
+  password: String
+}
