@@ -1,6 +1,4 @@
-# por Exequiel ALvarado
-
-# Tienda Ecommerce
+# Ecommerce
 
 ## Tabla de Contenidos
 
