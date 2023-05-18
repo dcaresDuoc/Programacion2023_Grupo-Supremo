@@ -40,6 +40,7 @@ export class CreateProductUseCase {
     try {
       await this._productRespository.createProduct(product)
     } catch (err) {
+      console.log(err)
       throw new Error('Error creating product in database')
     }
 

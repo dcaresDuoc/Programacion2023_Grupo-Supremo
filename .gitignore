@@ -1,6 +1,7 @@
-.env
+.env.development
 node_modules
 coverage
 jest.config.js
 dist
 credentials-gcloud.json
+.env

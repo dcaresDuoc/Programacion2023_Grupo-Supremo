@@ -1,1 +1,0 @@
-Quizas prisma debería estar configurada en modo singleton acá como lo hizo el otro con DynamoDB

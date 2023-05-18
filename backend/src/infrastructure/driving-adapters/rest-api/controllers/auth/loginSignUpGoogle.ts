@@ -26,26 +26,27 @@ export const loginSignUpGoogle = async (
 ): Promise<void> => {
   try {
     const googleUserData = req.user as GoogleUserData
-    const providerUserData = pipeProviderUserData.google(googleUserData)
-    const mySQLUserRepository = new MySQLUserRepository()
-    const uuidV4Generator = new UuidV4Generator()
-    const jwtDependency = new JWTDependency()
-    const bcryptDependency = new BcryptDependency()
-    const loginSignUpGoogleUseCase = new LoginSignUpGoogleUseCase(
-      mySQLUserRepository,
-      uuidV4Generator,
-      jwtDependency,
-      bcryptDependency
-    )
-    const authenticatedUser = await loginSignUpGoogleUseCase.run(
-      providerUserData
-    )
-    res.cookie(SESSION_COOKIE_NAME, authenticatedUser.authJwt, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "none",
-      maxAge: MAX_AGE_SESSION_COOKIE,
-    })
+    //const providerUserData = pipeProviderUserData.google(googleUserData)
+    //const mySQLUserRepository = new MySQLUserRepository()
+    //const uuidV4Generator = new UuidV4Generator()
+    //const jwtDependency = new JWTDependency()
+    //const bcryptDependency = new BcryptDependency()
+    //const loginSignUpGoogleUseCase = new LoginSignUpGoogleUseCase(
+    //  mySQLUserRepository,
+    //  uuidV4Generator,
+    //  jwtDependency,
+    //  bcryptDependency
+    //)
+    //const authenticatedUser = await loginSignUpGoogleUseCase.run(
+    //  providerUserData
+    //)
+    //res.cookie(SESSION_COOKIE_NAME, authenticatedUser.authJwt, {
+    //  httpOnly: true,
+    //  secure: true,
+    //  sameSite: "none",
+    //  maxAge: MAX_AGE_SESSION_COOKIE,
+    //})
+    console.log(req.user)
     res.redirect(FRONTEN_URL)
     // res.status(200).json(authenticatedUser.currentUser)
   } catch (err) {
