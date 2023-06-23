@@ -1,4 +1,8 @@
-# Ecommerce
+# Ecommerce de autos
+
+# La entrega final se encuentra en la carpeta app_final y dentro de esa 
+app, se encuentra su respectivo README.md para levantarla en modo 
+desarrollo
 
 ## Tabla de Contenidos
 

@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "7ef19e70-1ec1-48dc-8b03-3235e2d52236",
+		"name": "Compa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19311828"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los Autos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cars/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Auto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"title\": \"vehiculo tres\",\n        \"img_url\": \"tres\",\n        \"brand\": \"tres\",\n        \"age\": 3000,\n        \"mileage\": 3000,\n        \"price\": 3000,\n        \"description\": \"3333\",\n        \"technical_specifications\": \"3333\",\n        \"extra_information\": \"3333\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cars/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un Campo del Auto por Id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"price\": 3333\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cars/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un Auto por Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"title\": \"vehiculo tres\",\n        \"img_url\": \"tres\",\n        \"brand\": \"tres\",\n        \"age\": 3333,\n        \"mileage\": 3333,\n        \"price\": 3000,\n        \"description\": \"3333\",\n        \"technical_specifications\": \"3333\",\n        \"extra_information\": \"3333\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cars/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un Auto por Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cars/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
