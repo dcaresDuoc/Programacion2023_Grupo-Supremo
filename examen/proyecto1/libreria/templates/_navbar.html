@@ -1,0 +1,46 @@
+<nav class="navbar bg-danger navbar-expand-lg" data-bs-theme="dark">
+  <div class="container">
+    <img src="/static/my_app/logopelaomotors.png" style="width: 50px; height: 50px" class="mt-1">
+    <a class="navbar-brand text-light" href="{% url 'cars_home' %}">PelaoMotors</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'cars_home' %}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'cars_about' %}">Quienes somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'cars_contact' %}">Contactanos</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'cars_cars' %}">Vehiculos</a>
+        </li>
+        <li class=" nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'create_car' %}">Crear vehiculo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/logout">Cerrar sesión</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'signup' %}">Registrarse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'signin' %}">Iniciar Sesión</a>
+        </li>
+        {% endif %}
+        
+       
+        {% comment %} <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="{% url 'books_home' %}">Pagina de libros</a>
+        </li> {% endcomment %}
+      </ul>
+    </div>
+  </div>
+</nav>

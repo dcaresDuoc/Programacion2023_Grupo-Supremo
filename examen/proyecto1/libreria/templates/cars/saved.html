@@ -1,0 +1,25 @@
+{% extends 'base_cars.html' %}
+
+{% block content %}
+
+{{task.title}}
+
+{{error}}
+
+<form method="POST">
+  {% csrf_token %}
+  {{form.as_p}}
+
+  <button class="btn btn-primary">
+    Update
+  </button>
+</form>
+
+<form action="{% url 'delete_car' car.id %}" method="POST">
+  {% csrf_token %}
+  <button class="btn btn-danger">
+    delete
+  </button>
+</form>
+
+{% endblock %}

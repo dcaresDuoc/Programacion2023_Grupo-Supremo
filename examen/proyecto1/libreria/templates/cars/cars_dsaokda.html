@@ -1,0 +1,30 @@
+{% extends 'base_cars.html' %}
+
+
+{% block content %}
+
+<div class="container mt-5 pb-5">
+  <h2>Nuestros vehiculos</h2>
+  <hr />
+
+  <div class="row">
+    {% for car in cars %}
+    <div class="col-6 col-lg-4 col-xl-3 mt-3">
+      <div class="card">
+        <img src="{{car.img_url}}" class="card-img-top" alt="{{car.title}}" />
+        <div class="card-body">
+          <h5 class="card-title">{{car.title}}</h5>
+          <div class="d-flex justify-content-between">
+            <a href="{% url 'car_detail' car.id %}" class="btn btn-primary">Ver vehiculo</a>
+            <a href="{% url 'car_update_delete' car.id %}" class="btn btn-success">Gestionar vehiculo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+  
+</div>
+
+{% endblock %}

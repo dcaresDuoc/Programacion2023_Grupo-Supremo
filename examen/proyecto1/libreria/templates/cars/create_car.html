@@ -1,0 +1,65 @@
+{% extends "base_cars.html" %}
+
+{% block content %}
+
+<div class="card">
+  <div class="card-header">
+    Crear un vehiculo
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Datos del vehiculo</h4>
+    <form method="POST" class="my-3 mx-4" action="/create_car/">
+      {% csrf_token %}
+    
+      <div class="mb-3">
+        <label for="title" class="form-label">Titulo:</label>
+        <input type="text" class="form-control" id="title" name="title" >
+      </div>
+    
+      <div class="mb-3">
+        <label for="img_url" class="form-label">link de la imagen:</label>
+        <input type="text" class="form-control" id="img_url" name="img_url" >
+      </div>
+    
+      <div class="mb-3">
+        <label for="brand" class="form-label">Marca:</label>
+        <input type="text" class="form-control" id="brand" name="brand" >
+      </div>
+    
+      <div class="mb-3">
+        <label for="age" class="form-label">Año:</label>
+        <input type="number" class="form-control" id="age" name="age" >
+      </div>
+    
+      <div class="mb-3">
+        <label for="mileage" class="form-label">Kilometraje:</label>
+        <input type="number" class="form-control" id="mileage" name="mileage" >
+      </div>
+    
+      <div class="mb-3">
+        <label for="price" class="form-label">Precio:</label>
+        <input type="number" class="form-control" id="price" name="price" >
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Descripción</label>
+        <textarea class="form-control" id="description" name="description"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="technical_specifications" class="form-label">Especificaciones técnicas</label>
+        <textarea class="form-control" id="technical_specifications" name="technical_specifications"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="extra_information" class="form-label">Información adicional</label>
+        <textarea class="form-control" id="extra_information" name="extra_information"></textarea>
+    </div>
+    
+      <button type="submit" class="btn btn-primary">Crear</button>
+    </form>
+  </div>
+  <div class="card-footer text-muted">
+    Footer
+  </div>
+</div>
+
+{% endblock %}

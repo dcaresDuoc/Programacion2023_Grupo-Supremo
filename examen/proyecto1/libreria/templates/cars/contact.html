@@ -1,0 +1,51 @@
+{% extends 'base_cars.html' %}
+
+
+{% block content %}
+
+<div class="container mt-5 pb-5">
+  <div class="row">
+    <div class="col-12 col-md-6 my-auto h-100">
+      <h1 class="text-center text-danger">Contactanos</h1>
+      <p class="fs-4 text-center">
+        Nos enfocamos en la calidad y la satisfacción del cliente, y trabajamos incansablemente para asegurarnos de
+        que nuestros clientes estén satisfechos con cada compra que realicen. ¡Estamos emocionados de ayudar a
+        nuestros clientes a encontrar el auto de sus sueños!
+      </p>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <form class="border rounded-2 p-4" id="form">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Indica tu nombre" />
+        </div>
+        <div class="mb-3">
+          <label for="rut" class="form-label">RUT</label>
+          <input type="text" class="form-control" id="rut" placeholder="Indica tu RUT. Ej: 12345678-9" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" class="form-control" id="email" placeholder="Indica tu email" />
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="phone" placeholder="Indica tu telefono" />
+        </div>
+        <div class="mb-3">
+          <label for="comment" class="form-label">Comentario</label>
+          <textarea name="comment" id="comment" rows="3" class="form-control"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <!-- <input type="submit" value="Enviar" class="btn btn-danger btn-lg" /> -->
+          <button type="submit" class="btn btn-danger btn-lg">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/script_jquery.js"></script>
+
+{% endblock %}

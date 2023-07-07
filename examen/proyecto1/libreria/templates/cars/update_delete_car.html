@@ -1,0 +1,65 @@
+{% extends 'base_cars.html' %}
+
+{% block content %}
+
+{{ task.title }}
+
+<div class="alert alert-danger" role="alert">
+  {{ error }}
+</div>
+
+<form method="POST" class="my-3 mx-4">
+  {% csrf_token %}
+
+  <div class="mb-3">
+    <label for="title" class="form-label">Titulo:</label>
+    <input type="text" class="form-control" id="title" name="title" value="{{car.title}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="img_url" class="form-label">link de la imagen:</label>
+    <input type="text" class="form-control" id="img_url" name="img_url" value="{{car.img_url}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="brand" class="form-label">Marca:</label>
+    <input type="text" class="form-control" id="brand" name="brand" value="{{car.brand}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="age" class="form-label">Año:</label>
+    <input type="number" class="form-control" id="age" name="age" value="{{car.age}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="mileage" class="form-label">Kilometraje:</label>
+    <input type="number" class="form-control" id="mileage" name="mileage" value="{{car.mileage}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="price" class="form-label">Precio:</label>
+    <input type="number" class="form-control" id="price" name="price" value="{{car.price}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="description" class="form-label">Descripción</label>
+    <textarea class="form-control" id="description" name="description" value="{{car.description}}">{{car.description}}</textarea>
+</div>
+<div class="mb-3">
+    <label for="technical_specifications" class="form-label">Especificaciones técnicas</label>
+    <textarea class="form-control" id="technical_specifications" name="technical_specifications" value="{{car.technical_specifications}}">{{car.technical_specifications}}</textarea>
+</div>
+<div class="mb-3">
+    <label for="extra_information" class="form-label">Información adicional</label>
+    <textarea class="form-control" id="extra_information" name="extra_information" value="{{car.extra_information}}">{{car.extra_information}}</textarea>
+</div>
+
+  <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
+
+<form action="{% url 'delete_car' car.id %}" method="POST" class="mx-4">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>
+
+{% endblock %}
