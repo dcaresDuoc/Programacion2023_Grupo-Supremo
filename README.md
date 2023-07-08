@@ -26,7 +26,7 @@ Este proyecto es un requerimiento de un pyme para su Ecommerce, fue realizado po
 ### Links
 
 - Repositorio: [Solution](https://github.com/dcaresDuoc/Programacion2023_Grupo-Supremo)
-- Live Site URL: [Live App](https://www.google.com/)
+- Live Site URL: [Live App](https://car.leandrocode.software)
 
 ## Proceso
 
